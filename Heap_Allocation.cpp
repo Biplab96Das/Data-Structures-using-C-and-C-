@@ -12,6 +12,8 @@ int main()
   cout<<"\n";
   for(int i=0;i<5;++i)
      cout<<Point[i]<<" ";
-  cout<<"\n";       
+  cout<<"\n";
+  free(p);
+  delete [ ] Point;       
   return 0;
 }
