@@ -14,7 +14,7 @@ int main()
   for(int i=0;i<5;++i)
      cout<<Point[i]<<" ";
   cout<<"\n";
-  free(p);
-  delete [ ] Point;       
+  free(p);//In C we can free-up Heap space after our program is finished
+  delete [ ] Point;// In C++ we can free-up Heap space after our program is finished    
   return 0;
 }
