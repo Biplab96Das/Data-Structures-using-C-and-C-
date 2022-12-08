@@ -1,5 +1,6 @@
-#include<iostream>
-#include<stdio.h>
+#include<iostream>//For C++
+#include<stdio.h>//For C
+#include<stdlib.h>//For Malloc function.
 using namespace std;
 int main()
 {
