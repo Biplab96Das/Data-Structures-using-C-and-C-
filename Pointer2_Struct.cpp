@@ -8,6 +8,8 @@ struct Rectangle
 };
 int main()
 {
+ Rectangle r={10,5};//Accessing Rectangle using normal variable
+ cout<<"Area= "<<r.length*r.breadth<<endl;   
  Rectangle *p=(struct Rectangle *)malloc(sizeof(struct Rectangle));//Unlike C,C++ doesn't
  //require to declare struct before Rectangle variable
  (*p).length=12;//Accessing through pointer and dot
