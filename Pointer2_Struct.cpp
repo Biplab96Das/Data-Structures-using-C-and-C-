@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//Pointer to Structure 
 struct Rectangle 
 {
     int length;
@@ -7,7 +8,8 @@ struct Rectangle
 };
 int main()
 {
- struct Rectangle *p=(struct Rectangle *)malloc(sizeof(struct Rectangle));
+ Rectangle *p=(struct Rectangle *)malloc(sizeof(struct Rectangle));//Unlike C,C++ doesn't
+ //require to declare struct before Rectangle variable
  (*p).length=12;//Accessing through pointer and dot
  (*p).breadth=12;
  cout<<"Area= "<<(*p).length*(*p).breadth<<endl;
