@@ -15,7 +15,7 @@ int main()
  q->breadth=6;
  cout<<"Area= "<<(*q).breadth*q->length<<endl;
          //*Store structure in Heap*   
- Rectangle *p=(struct Rectangle *)malloc(sizeof(struct Rectangle));//Unlike C,C++ doesn't
+ Rectangle *p=new Rectangle;//OR (struct Rectangle *)malloc(sizeof(struct Rectangle));//Unlike C,C++ doesn't
  //require to declare struct before Rectangle variable
  (*p).length=12;//Accessing through pointer and dot
  (*p).breadth=12;
